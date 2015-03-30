@@ -25,11 +25,11 @@ For each clock described in the input, your program should report the number of 
 
 ###Sample Input
 
-30
-45
-0
+    30
+    45
+    0
 
 ###Output for the Sample Input
 
-30 balls cycle after 15 days.
-45 balls cycle after 378 days.
+    30 balls cycle after 15 days.
+    45 balls cycle after 378 days.
