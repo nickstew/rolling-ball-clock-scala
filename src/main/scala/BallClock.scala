@@ -13,7 +13,7 @@ class BallClock(val ballsInInitQueue: Int,
      * Runs the Rolling Ball Clock until the Queue matches the original Queue
      * @return Int of days before the Queue matches the original Queue ordering.
      */
-    def run(): Int = {
+    def run: Int = {
         var minutes = 0
         val originalQueue = (1 to ballsInInitQueue).toList
         do{
@@ -72,7 +72,7 @@ object BallClock extends App {
         list = ((list.reverse).tail).reverse
         list.foreach(ballsInQueue => {
             val clock = BallClock(ballsInQueue)
-            val days = time { clock.run() }
+            val days = time { clock.run }
             println(f"$ballsInQueue ball cycle after $days days")
         })
     }
